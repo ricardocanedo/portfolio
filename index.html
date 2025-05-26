@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <!-- Menu lateral -->
-    <div class="sidebar text-center" id="sidebar">
+
+    <div class="menu text-center" id="menu">
+        <h1 class="pb-4 d-lg-none">Portfolio</h1>
         <img src="./assets/img/self.jpg" alt="Foto do Perfil" class="img-fluid rounded-circle profile-img mt-2 mb-3 mx-auto d-block">
         <h4>Ricardo Canedo</h4>
         <p class="mb-2">
@@ -27,17 +28,16 @@
         </nav>
     </div>
 
-    <!-- Conteúdo principal -->
-    <div class="content">
+    <div class="main-content">
         <header>
-            <h1 class="mb-4">Portfolio</h1>
+            <h1 class="mb-4 d-none d-lg-block">Portfolio</h1>
         </header>
 
         <main>
             <section id="sobre">
                 <div class="card card-body text-center">
                     <h2>Sobre</h2>
-                    <p>Bem-vindo ao meu portfolio! Aqui você encontrará uma seleção de trabalhos que elaborei ao longo da minha carreira como Analista de Desenvolvimento de Sistemas.</p>
+                    <p>Bem-vindo! Aqui você encontrará uma seleção de trabalhos que elaborei ao longo da minha carreira como Analista de Desenvolvimento de Sistemas.</p>
                 </div>
             </section>
             <section id="projetos" class="mt-4">
@@ -69,6 +69,7 @@
             <p>&copy; 2025 Ricardo Canedo. Todos os direitos reservados.</p>
         </footer>
     </div>
+</div>
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
