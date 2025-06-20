@@ -8,68 +8,137 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-
-    <div class="menu text-center" id="menu">
-        <h1 class="pb-4 d-lg-none">Portfolio</h1>
-        <img src="./assets/img/self.jpg" alt="Foto do Perfil" class="img-fluid rounded-circle profile-img mt-2 mb-3 mx-auto d-block">
-        <h4>Ricardo Canedo</h4>
-        <p class="mb-2">
-            <i class="fa fa-graduation-cap mr-1" aria-hidden="true"></i>
-            Analista de Desenvolvimento de Sistemas
-        </p>
-        <p>
-            <i class="fa fa-graduation-cap mr-1" aria-hidden="true"></i>
-            Engenheiro de Controle e Automação
-        </p>
-        <nav class="nav flex-column">
-            <a class="nav-link" href="#sobre">Sobre</a>
-            <a class="nav-link" href="#projetos">Projetos</a>
-            <a class="nav-link" href="#contato">Contato</a>
-        </nav>
-    </div>
-
-    <div class="main-content">
-        <header>
-            <h1 class="mb-4 d-none d-lg-block">Portfolio</h1>
-        </header>
-
-        <main>
-            <section id="sobre">
-                <div class="card card-body text-center">
-                    <h2>Sobre</h2>
-                    <p>Bem-vindo! Aqui você encontrará uma seleção de trabalhos que elaborei ao longo da minha carreira como Analista de Desenvolvimento de Sistemas.</p>
+    <header class="bg-light">
+        <nav class="container navbar navbar-expand-md bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Ricardo Canedo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Sobre mim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work">Trabalhos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contato</a>
+                        </li>
+                    </ul>
                 </div>
-            </section>
-            <section id="projetos" class="mt-4">
-                <div class="card card-body text-center">
-                    <h2>Projetos</h2>
-                    <!-- <p>Aqui estão alguns dos projetos que desenvolvi:</p>
-                    <ul>
-                        <li>Projeto 1</li>
-                        <li>Projeto 2</li>
-                        <li>Projeto 3</li>
-                    </ul> -->
-    
-                    <div class="text-center">
-                        <p class="fs-4">🚧 Página em construção! 🚧</p>
-                        <p class="fs-5">Atualmente, estou em processo de atualização do meu portfolio. <br>Em breve, você poderá conferir aqui os meus principais trabalhos e projetos.</p>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="text-center">
+            <div class="container py-4">
+                <h1 class="mb-5">Bem-vindo ao meu portfólio</h1>
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="d-flex align-items-center justify-content-center h-100">
+                            <img src="./assets/img/self.jpg" alt="Foto de perfil" class="profile-img rounded-circle mb-md-4">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="d-flex align-items-center justify-content-center h-100">
+                            <div class="text-center mt-4">
+                                <h3>Sou Ricardo Canedo, um desenvolvedor apaixonado por criar experiências digitais eficientes!</h3>
+                                <a href="#about" class="btn btn-primary mt-4">Veja sobre mim</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section>
-            <section id="contato" class="mt-4">
-                <div class="card card-body text-center">
-                    <h2>Contato</h2>
-                    <p>Entre em contato comigo através do meu <a href="https://www.linkedin.com/in/ricardo-canedo/" target="_blank">LinkedIn</a>.</p>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container py-4">
+                <h2 class="mb-md-4">Sobre mim</h2>
+                <p>Sou um desenvolvedor web com experiência em criar aplicações modernas e responsivas. Minha paixão é transformar ideias em soluções digitais que impactam positivamente a vida das pessoas.</p>
+                <a href="#skills" class="btn btn-primary mt-4">Veja minhas habilidades</a>   
+            </div>
+        </section>
+        <section id="skills">
+            <div class="container py-4">
+                <h2 class="mb-md-4">Habilidades</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">HTML, CSS, JavaScript, Typescript</li>
+                    <li class="list-group-item">Laravel, Angular, Django, React</li>
+                    <li class="list-group-item">Git, GitHub</li>
+                </ul>
+                <div class="d-flex justify-content-center mt-4">
+                    <a href="#work" class="btn btn-primary">Veja meus trabalhos</a>
                 </div>
-            </section>
-        </main>
+            </div>
+        </section>
+        <section id="work">
+            <div class="container py-4">
+                <h2 class="mb-md-4">Trabalhos</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card mb-4">
+                            <img src="./assets/img/project1.jpg" class="card-img-top" alt="Projeto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Projeto 1</h5>
+                                <p class="card-text">Descrição do projeto 1.</p>
+                                <a href="#" class="btn btn-primary">Visitar Projeto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card mb-4">
+                            <img src="./assets/img/project2.jpg" class="card-img-top" alt="Projeto 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Projeto 2</h5>
+                                <p class="card-text">Descrição do projeto 2.</p>
+                                <a href="#" class="btn btn-primary">Visitar Projeto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container py-4">
+                <h2 class="mb-md-4">Contato</h2>
+                <p>Entre em contato comigo! Sinta-se à vontade para me enviar uma mensagem.</p>
+                
+                <div class="my-4 text-center">
+                    <a href="https://www.linkedin.com/in/ricardo-canedo/" target="_blank" class="btn btn-outline-primary m-2">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
 
-        <!-- Rodapé -->
-        <footer class="text-center mt-4">
-            <p>&copy; 2025 Ricardo Canedo. Todos os direitos reservados.</p>
-        </footer>
-    </div>
-</div>
+                    <a href="https://api.whatsapp.com/send?phone=5512981311217" target="_blank" class="btn btn-outline-primary m-2">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+
+                    <a href="mailto:ricardocanedo@live.com" class="btn btn-outline-primary m-2">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                    
+                    <a href="tel:+5512981311217" class="btn btn-outline-primary m-2">
+                        <i class="fas fa-phone-alt"></i> +55 12 98131-1217
+                    </a>
+                </div>
+
+                <p>Caçapava - SP</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-light text-center mt-3 py-4">
+        <p>&copy; 2025 Ricardo Canedo. Todos os direitos reservados.</p>
+    </footer>
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
