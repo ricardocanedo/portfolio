@@ -5,10 +5,49 @@ body {
 }
 
 header {
-    background-color: #cdcdcd !important;
+    background-color: #fff !important;
     padding: 10px 20px;
     display: flex;
     align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-radius: 0 0 18px 18px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: box-shadow 0.3s;
+}
+
+.navbar {
+    background: transparent !important;
+    border-radius: 0 0 18px 18px;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #0066ff !important;
+    text-shadow: 0 1px 4px #e3e3e3;
+    transition: color 0.4s;
+}
+
+.navbar-brand:hover {
+    color: #084298 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #333 !important;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+    background: #e7f1ff;
+    color: #0066ff !important;
+}
+
+.navbar-toggler {
+    border: none;
+    box-shadow: none !important;
 }
 
 .card {
@@ -95,5 +134,13 @@ header {
 
     .img-carousel {
         padding-bottom: 24px;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 0.2rem 0;
+        padding: 0.7rem 1rem;
+    }
+    header {
+        border-radius: 0 0 10px 10px;
     }
 }
