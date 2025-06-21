@@ -58,9 +58,42 @@ header {
     border-radius: 8px;
 }
 
+.carousel,
+.carousel-inner,
+.carousel-item {
+    max-height: 600px;
+    height: 100%;
+}
+
+.carousel-item img {
+    max-height: 600px;
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.carousel-caption {
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    padding-bottom: 0;
+}
+
+.img-carousel {
+    max-height: 600px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 84px;
+}
+
 @media (max-width: 768px) {
     .profile-img {
         width: 200px;
         height: 200px;
+    }
+
+    .img-carousel {
+        padding-bottom: 24px;
     }
 }
