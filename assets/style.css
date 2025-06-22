@@ -17,6 +17,10 @@ header {
     transition: box-shadow 0.3s;
 }
 
+:target {
+    scroll-margin-top: 76px;
+}
+
 .navbar {
     background: transparent !important;
     border-radius: 0 0 18px 18px;
